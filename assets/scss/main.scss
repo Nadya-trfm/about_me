@@ -1,0 +1,87 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $black;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $pink-4;
+  transition: color .3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: .125em;
+    height: 1px;
+    background: linear-gradient(90deg, $pink-2 0%, $pink-3 50%, $pink-4 100%);
+    transition: bottom .3s ease;
+  }
+
+  &:hover {
+    color: rgba($pink-4, .8);
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &:visited {
+    color: $pink-1;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  background-color: $black;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 1200px;
+
+  a::after {
+    display: none;
+  }
+
+  img {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+.footer {
+  background-color: $black;
+  padding: 40px 0;
+}
+
+.material {
+  &__item {
+    color: $pink-3;
+    font-family: "Inter-light", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
