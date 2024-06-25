@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {resolve} from "path";
 
 export default defineNuxtConfig({
+    app:{
+        baseURL: "/about_me/",
+    },
     alias: {
         assets: "/<rootDir>/assets",
     },
