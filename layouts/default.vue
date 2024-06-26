@@ -21,9 +21,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <slot/>
-    </div>
+    <slot/>
   </main>
   <footer class="footer">
     <div class="container">
@@ -38,7 +36,8 @@
             href="https://icons8.com">Icons8</a>
         </li>
         <li class="material__item">
-          <a target="_blank" href="https://icons8.com/icon/RORPuSq4oVZb/mail">mail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <a target="_blank" href="https://icons8.com/icon/RORPuSq4oVZb/mail">mail</a> icon by <a target="_blank"
+                                                                                                  href="https://icons8.com">Icons8</a>
         </li>
       </ul>
     </div>

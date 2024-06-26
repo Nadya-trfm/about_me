@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: $black;
+  background-color: $pink-0;
 }
 
 a {
@@ -51,6 +52,8 @@ a {
 .header {
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
   padding: 20px 0;
   background-color: $black;
 }
@@ -83,5 +86,67 @@ a {
     font-family: "Inter-light", sans-serif;
     font-weight: 300;
     font-size: 12px;
+  }
+}
+
+.title {
+  font-family: "Inter-bold", sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.top {
+  min-height: calc(100vh - 90px);
+}
+
+.block-title {
+  margin-top: 32px;
+}
+
+.technologies {
+  max-width: calc(100% / 2);
+  border: solid 3px $pink-3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__title {
+    font-family: "Inter-bold", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+
+  &__name {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-right: 12px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__item {
+    display: block;
+    padding: 0 5px;
+    background-color: $pink-2;
+    border: solid 1px $pink-4;
+    border-radius: 10px;
+    height: fit-content;
   }
 }
