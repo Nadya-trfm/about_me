@@ -9,5 +9,14 @@ export default defineNuxtConfig({
     },
     css: [
         "~/assets/scss/main.scss"
-    ]
+    ],
+    modules: [[
+        '@pinia/nuxt',
+        {
+            autoImports: ["defineStore"]
+        }
+    ]],
+    imports:{
+        dirs: ["./stores"]
+    }
 })
