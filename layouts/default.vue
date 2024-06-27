@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <ul class="links">
         <li class="links__item">
           <a target="_blank" href="https://github.com/Nadya-trfm">

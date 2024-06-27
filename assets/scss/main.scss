@@ -56,6 +56,10 @@ a {
   top: 0;
   padding: 20px 0;
   background-color: $black;
+
+  &__container{
+    width:100%
+  }
 }
 
 .links {
@@ -63,7 +67,6 @@ a {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  width: 1200px;
 
   a::after {
     display: none;
